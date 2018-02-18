@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "825237808679",
+    "firebase_url": "https://eventbuzz-377dd.firebaseio.com",
+    "project_id": "eventbuzz-377dd",
+    "storage_bucket": "eventbuzz-377dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825237808679:android:071eaf9913f58780",
+        "android_client_info": {
+          "package_name": "com.softbird.eventbuzz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825237808679-g5fp9ori0in0pld1lc4efno87rg97pdp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.softbird.eventbuzz",
+            "certificate_hash": "edab612bbd82abe3b60fe554c0c1e634a3f0ad91"
+          }
+        },
+        {
+          "client_id": "825237808679-c4uqd5ngc85vmqdbmvjkris05fg3md9r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkgl0JIumtHObzVPBt_EsQKeW1ojIi1yU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825237808679-c4uqd5ngc85vmqdbmvjkris05fg3md9r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

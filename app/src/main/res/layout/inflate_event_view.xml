@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ic_event"
+                android:layout_width="40dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_height="36dp"
+                app:srcCompat="@drawable/ic_event"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ic_event"
+                android:layout_marginRight="16dp"
+                android:text="Event"
+                fontPath="fonts/Nunito-Bold.ttf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginTop="16dp"
+                android:textSize="24dp"
+                />
+
+            <ImageView
+                android:id="@+id/iv_separator"
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_below="@+id/ic_event"
+                android:layout_marginBottom="4dp"
+                android:background="@android:color/darker_gray"/>
+
+            <TextView
+                android:id="@+id/tv_titleEvent"
+                android:textSize="20dp"
+                android:text="Title for the Event"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                fontPath="fonts/Nunito-ExtraBold.ttf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="0dp"
+                android:layout_below="@+id/iv_separator"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_eventProfileImg"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                app:civ_border_width="1dp"
+                app:civ_border_color="@color/colorPrimary"
+                android:src="@drawable/login_image"
+                android:layout_below="@+id/tv_titleEvent"/>
+
+            <TextView
+                android:id="@+id/tv_eventOwnerName"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@+id/civ_eventProfileImg"
+                android:layout_alignTop="@+id/civ_eventProfileImg"
+                android:textSize="16dp"
+                android:layout_marginTop="4dp"
+                fontPath="fonts/Nunito-Bold.ttf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="8dp"
+                android:text="Mayur A Ajmani"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_eventUploadDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mar 14, 2017"
+                android:textSize="12dp"
+                android:gravity="right"
+                android:layout_alignParentEnd="true"
+                fontPath="fonts/Nunito-Light.ttf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignTop="@+id/tv_eventOwnerName"
+                android:layout_toRightOf="@+id/tv_eventOwnerName"/>
+
+            <TextView
+                android:id="@+id/tv_eventDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/civ_eventProfileImg"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="4dp"
+                fontPath="fonts/Nunito-Bold.ttf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginBottom="4dp"
+                android:text="8"
+                android:textSize="80dp"/>
+
+            <TextView
+                android:id="@+id/tv_eventDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/civ_eventProfileImg"
+                android:layout_toRightOf="@id/tv_eventDate"
+                android:layout_marginTop="30dp"
+                android:text="Friday"
+                android:maxLength="3"
+                fontPath="fonts/Nunito-Bold.ttf"
+                tools:ignore="MissingPrefix"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/tv_eventMonthYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_eventDay"
+                android:layout_toRightOf="@+id/tv_eventDate"
+                android:text="Aug, 17"
+                fontPath="fonts/Nunito-Bold.ttf"
+                tools:ignore="MissingPrefix"
+                android:textSize="16dp"
+                android:layout_marginTop="2dp"/>
+
+            <ImageView
+                android:id="@+id/iv_separator2"
+                android:layout_width="0.1dp"
+                android:layout_height="56dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="12dp"
+                android:layout_toRightOf="@+id/tv_eventMonthYear"
+                android:layout_alignTop="@id/tv_eventDay"/>
+
+            <TextView
+                android:id="@+id/tv_eventTime"
+                android:layout_width="wrap_content"
+                android:layout_height="56dp"
+                android:layout_toRightOf="@+id/iv_separator2"
+                android:textSize="28dp"
+                android:gravity="center_vertical"
+                android:width="120dp"
+                fontPath="fonts/Nunito-SemiBold.ttf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginTop="0dp"
+                android:layout_alignTop="@id/iv_separator2"
+                android:text="5:00 PM"/>
+
+            <TextView
+                android:id="@+id/tv_eventDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_eventDate"
+                fontPath="fonts/Nunito-Bold.ttf"
+                tools:ignore="MissingPrefix"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Lorem ipsum Porem..... Event Description"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="0dp"
+                fontPath="fonts/Nunito-Bold.ttf"
+                tools:ignore="MissingPrefix"
+                android:textColor="@android:color/white"
+                android:text="View Details"
+                android:layout_below="@id/tv_eventDescription"
+                android:background="@color/colorPrimary"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
